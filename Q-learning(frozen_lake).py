@@ -35,7 +35,7 @@ def select_action(actions, epsilon=epsilon):
     if (rand_explorative_treshold > epsilon):
         action = np.argmax(action)
     
-    #exploitative approach
+    #explorative approach
     else:
         action = env.action_space.sample()
 
